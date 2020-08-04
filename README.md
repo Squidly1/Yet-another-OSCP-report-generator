@@ -12,10 +12,33 @@ That's it.  Just plop that in wherever you need to add an image in your lab_repo
 
 ---
 
+Usages:
+
+./generate_report.sh lab_report.md Lab-Report.pdf
+./generate_report.sh exam_report.md Exam-Report.pdf
+
+./package_maker.sh
+
+You can use the generate_report.sh to test out the PDF creation of your edited .md files, and use ./package_maker.sh to auto-generate and compress the lab and exam reports for you.  Note that when using the package_maker.sh you will need to close the PDF viewer to continue on through the script (it pauses after showing each PDF).  As well, I swapped out using evince (John Hammon'd original version uses this as his PDF viewer) for atril... for some reason I kept getting a "server" error with evince and got tired of wrestling with it, and atril works well enough.
+
+---
+
+Dependencies:
+
+apt install -y pandoc p7zip texlive-full atril
+
+---
+
+General Notes:
+
 The "lab_report.md" file should be updated as you finalize owning each of the lab machines.  View it in its raw form to see all of the formatting.  Any good text editor can be used to make changes to it.
 
-When you are ready for the exam, make a copy of the lab_report.md file and rename that copy as exam_report.md.  As you run through the exam, make sure you annotate your findings and add the links to amplifying images into the exam_report.md file.
+Test this code out waaaaaay before the exam day!!1!   If this borks it needs to be troubleshot and fixed before the stress of the exam day.
 
-ALWAAAAAAYS double-check the reports BEFORE sending them to Offensive Security!  Usage of this script and all associated code used to generate your report does not guarantee any protections against your report getting borked in the end.  Lastly, remember to always test code waaaaaaaaaaaaaay before the final day.  If this borks it needs to be troubleshot and fixed before the exam day.
+As well, double-check the two reports BEFORE sending them to Offensive Security!  Usage of this script and all associated code used to generate your report does NOT carry any guarantees for perfection or any protections against your report getting borked in the end.
 
-Required:  All of this is provided to assist in minimizing the effort in creating the final documentation required to complete the exam phase of the OSCP.  If this helps you then great, if not... apologies.
+---
+
+Required "Don't Blame ME!":
+
+All of this is provided to assist in minimizing the effort in creating the final documentation required to complete the exam phase of the OSCP.  If this helps you then great, if not... apologies.
