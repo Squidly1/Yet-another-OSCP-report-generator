@@ -15,6 +15,7 @@ That's it.  Just plop that in wherever you need to add an image in your lab_repo
 Usages:
 
 ./generate_report.sh lab_report.md Lab-Report.pdf
+
 ./generate_report.sh exam_report.md Exam-Report.pdf
 
 ./package_maker.sh
