@@ -13,9 +13,13 @@ That's it.  Just plop that in wherever you need to add an image in your lab_repo
 ---
 
 Usages:
+
 <code> ./generate_report.sh lab_report.md Lab-Report.pdf</code>
+
 <code> ./generate_report.sh exam_report.md Exam-Report.pdf</code>
+
 <code> ./package_maker.sh </code>
+
 
 You can use the generate_report.sh to test out the PDF creation of your edited .md files, and use ./package_maker.sh to auto-generate and compress the lab and exam reports for you.  Note that when using the package_maker.sh you will need to close the PDF viewer to continue on through the script (it pauses after showing each PDF).  As well, I swapped out using evince (John Hammond's original version uses this as his PDF viewer) for atril... for some reason I kept getting a "server" error with evince and got tired of wrestling with it, and atril works well enough.
 
