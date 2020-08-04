@@ -20,13 +20,13 @@ Usages:
 
 ./package_maker.sh
 
-You can use the generate_report.sh to test out the PDF creation of your edited .md files, and use ./package_maker.sh to auto-generate and compress the lab and exam reports for you.  Note that when using the package_maker.sh you will need to close the PDF viewer to continue on through the script (it pauses after showing each PDF).  As well, I swapped out using evince (John Hammon'd original version uses this as his PDF viewer) for atril... for some reason I kept getting a "server" error with evince and got tired of wrestling with it, and atril works well enough.
+You can use the generate_report.sh to test out the PDF creation of your edited .md files, and use ./package_maker.sh to auto-generate and compress the lab and exam reports for you.  Note that when using the package_maker.sh you will need to close the PDF viewer to continue on through the script (it pauses after showing each PDF).  As well, I swapped out using evince (John Hammond's original version uses this as his PDF viewer) for atril... for some reason I kept getting a "server" error with evince and got tired of wrestling with it, and atril works well enough.
 
 ---
 
 Dependencies:
 
-apt install -y pandoc p7zip texlive-full atril
+<code> apt install -y pandoc p7zip texlive-full atril </code>
 
 ---
 
