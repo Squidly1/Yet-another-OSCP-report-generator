@@ -6,5 +6,7 @@ In short, to add an image into your report with a caption:
 
 ! [ caption ADD_CAPTION_HERE ] ( /PATH/TO/YOUR/IMAGE/IMAGE.jpg )
 
+*Note: Remove the extraneous spaces in the above code sample, unless you like frustration.*
+
 That's it.  Just plop that in wherever you need to add an image in your lab_report.md or exam_report.md files and those images will be added to the final PDF version of the report.  The only other thing to note is that the generator will annotate "Figure" and a #.# for each image based on which *section* the image appears in and (to the right of the .) based on however many images are in that same section (it auto-counts for you).  Lastly, please note that attempts to manually add a width setting will be ignored - pandoc will size the image to fit the width of your page automatically.
 
